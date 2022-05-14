@@ -1,6 +1,7 @@
 package mao.spring_boot_redis_hmdp.service.impl;
 
 
+import cn.hutool.core.util.BooleanUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.json.JSONUtil;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -41,20 +42,50 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
         {
             return Result.fail("店铺信息不存在");
         }
-        //null，查数据库
-        Shop shop = this.getById(id);
-        //判断数据库里的信息是否为空
-        if (shop == null)
+        //锁的key
+        String lockKey = RedisConstants.LOCK_SHOP_KEY + id;
+
+        try
         {
-            //空，将空值写入redis，返回错误
-            stringRedisTemplate.opsForValue().set(redisKey, "", RedisConstants.CACHE_NULL_TTL, TimeUnit.MINUTES);
-            return Result.fail("店铺信息不存在");
+            //获取互斥锁
+            boolean lock = tryLock(lockKey);
+            //判断锁是否获取成功
+            if (!lock)
+            {
+                //没有获取到锁
+                //200毫秒后再次获取
+                try
+                {
+                    Thread.sleep(200);
+                }
+                catch (InterruptedException e)
+                {
+                    e.printStackTrace();
+                }
+                //递归调用
+                return queryShopById(id);
+            }
+            //得到了锁
+            //null，查数据库
+            Shop shop = this.getById(id);
+            //判断数据库里的信息是否为空
+            if (shop == null)
+            {
+                //空，将空值写入redis，返回错误
+                stringRedisTemplate.opsForValue().set(redisKey, "", RedisConstants.CACHE_NULL_TTL, TimeUnit.MINUTES);
+                return Result.fail("店铺信息不存在");
+            }
+            //存在，回写到redis里，设置随机的过期时间
+            stringRedisTemplate.opsForValue().set(redisKey, JSONUtil.toJsonStr(shop),
+                    RedisConstants.CACHE_SHOP_TTL * 60 + getIntRandom(0, 300), TimeUnit.SECONDS);
+            //返回数据
+            return Result.ok(shop);
         }
-        //存在，回写到redis里，设置随机的过期时间
-        stringRedisTemplate.opsForValue().set(redisKey, JSONUtil.toJsonStr(shop),
-                RedisConstants.CACHE_SHOP_TTL * 60 + getIntRandom(0, 300), TimeUnit.SECONDS);
-        //返回数据
-        return Result.ok(shop);
+        finally
+        {
+            //释放锁
+            this.unlock(redisKey);
+        }
     }
 
     @Override
@@ -99,6 +130,29 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
             min = max;
         }
         return min + (int) (Math.random() * (max - min + 1));
+    }
+
+    /**
+     * 获取锁
+     *
+     * @param key redisKey
+     * @return 获取锁成功，返回true，否则返回false
+     */
+    private boolean tryLock(String key)
+    {
+        Boolean result = stringRedisTemplate.opsForValue().setIfAbsent(key, "1",
+                RedisConstants.LOCK_SHOP_TTL, TimeUnit.SECONDS);
+        return BooleanUtil.isTrue(result);
+    }
+
+    /**
+     * 释放锁
+     *
+     * @param key redisKey
+     */
+    private void unlock(String key)
+    {
+        stringRedisTemplate.delete(key);
     }
 
 }
