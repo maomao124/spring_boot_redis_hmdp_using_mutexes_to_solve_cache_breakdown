@@ -1,0 +1,153 @@
+2022-05-14 12:52:47.934  INFO 16336 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : Starting SpringBootRedisHmdpUsingMutexesToSolveCacheBreakdownApplication using Java 16.0.2 on mao with PID 16336 (H:\程序\大三下期\spring_boot_redis_hmdp使用互斥锁解决缓存击穿问题\target\classes started by mao in H:\程序\大三下期\spring_boot_redis_hmdp使用互斥锁解决缓存击穿问题)
+2022-05-14 12:52:47.935 DEBUG 16336 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-14 12:52:47.936  INFO 16336 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : The following 1 profile is active: "dev"
+2022-05-14 12:52:47.988  INFO 16336 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-14 12:52:47.988  INFO 16336 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-14 12:52:48.774  INFO 16336 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-14 12:52:48.777  INFO 16336 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-14 12:52:48.810  INFO 16336 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2022-05-14 12:52:49.418  INFO 16336 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-14 12:52:49.426  INFO 16336 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-14 12:52:49.426  INFO 16336 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-14 12:52:49.500  INFO 16336 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-14 12:52:49.500  INFO 16336 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1510 ms
+2022-05-14 12:52:49.780  INFO 16336 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-05-14 12:52:49.891  INFO 16336 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-05-14 12:52:50.841  INFO 16336 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-14 12:52:50.886  INFO 16336 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-14 12:52:50.896  INFO 16336 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : Started SpringBootRedisHmdpUsingMutexesToSolveCacheBreakdownApplication in 3.479 seconds (JVM running for 4.384)
+2022-05-14 12:53:38.300  INFO 16336 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-14 12:53:38.300  INFO 16336 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-14 12:53:38.300  INFO 16336 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-05-14 12:53:38.958 DEBUG 16336 --- [http-nio-8081-exec-2] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:53:38.974 DEBUG 16336 --- [http-nio-8081-exec-2] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:53:39.004 DEBUG 16336 --- [http-nio-8081-exec-2] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:53:55.046  INFO 16336 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-05-14 12:53:55.048  INFO 16336 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-05-14 12:54:00.636  INFO 1768 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : Starting SpringBootRedisHmdpUsingMutexesToSolveCacheBreakdownApplication using Java 16.0.2 on mao with PID 1768 (H:\程序\大三下期\spring_boot_redis_hmdp使用互斥锁解决缓存击穿问题\target\classes started by mao in H:\程序\大三下期\spring_boot_redis_hmdp使用互斥锁解决缓存击穿问题)
+2022-05-14 12:54:00.638 DEBUG 1768 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-14 12:54:00.639  INFO 1768 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : The following 1 profile is active: "dev"
+2022-05-14 12:54:00.684  INFO 1768 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-14 12:54:00.684  INFO 1768 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-14 12:54:01.205  INFO 1768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-14 12:54:01.208  INFO 1768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-14 12:54:01.228  INFO 1768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2022-05-14 12:54:01.662  INFO 1768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-14 12:54:01.670  INFO 1768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-14 12:54:01.670  INFO 1768 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-14 12:54:01.731  INFO 1768 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-14 12:54:01.731  INFO 1768 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1046 ms
+2022-05-14 12:54:01.947  INFO 1768 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-05-14 12:54:02.045  INFO 1768 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-05-14 12:54:02.909  INFO 1768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-14 12:54:02.950  INFO 1768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-14 12:54:02.961  INFO 1768 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : Started SpringBootRedisHmdpUsingMutexesToSolveCacheBreakdownApplication in 2.674 seconds (JVM running for 3.287)
+2022-05-14 12:54:40.729  INFO 1768 --- [http-nio-8081-exec-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-14 12:54:40.730  INFO 1768 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-14 12:54:40.731  INFO 1768 --- [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-14 12:58:43.753 DEBUG 1768 --- [http-nio-8081-exec-152] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.770 DEBUG 1768 --- [http-nio-8081-exec-152] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.773 DEBUG 1768 --- [http-nio-8081-exec-146] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.774 DEBUG 1768 --- [http-nio-8081-exec-146] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.787 DEBUG 1768 --- [http-nio-8081-exec-146] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.787 DEBUG 1768 --- [http-nio-8081-exec-152] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.790 DEBUG 1768 --- [http-nio-8081-exec-364] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.790 DEBUG 1768 --- [http-nio-8081-exec-362] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.790 DEBUG 1768 --- [http-nio-8081-exec-364] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.790 DEBUG 1768 --- [http-nio-8081-exec-362] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.792 DEBUG 1768 --- [http-nio-8081-exec-362] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.792 DEBUG 1768 --- [http-nio-8081-exec-364] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.792 DEBUG 1768 --- [http-nio-8081-exec-220] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.793 DEBUG 1768 --- [http-nio-8081-exec-264] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.793 DEBUG 1768 --- [http-nio-8081-exec-220] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.793 DEBUG 1768 --- [http-nio-8081-exec-264] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.794 DEBUG 1768 --- [http-nio-8081-exec-264] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.795 DEBUG 1768 --- [http-nio-8081-exec-317] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.795 DEBUG 1768 --- [http-nio-8081-exec-215] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.795 DEBUG 1768 --- [http-nio-8081-exec-317] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.795 DEBUG 1768 --- [http-nio-8081-exec-215] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.797 DEBUG 1768 --- [http-nio-8081-exec-220] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.797 DEBUG 1768 --- [http-nio-8081-exec-215] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.797 DEBUG 1768 --- [http-nio-8081-exec-254] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.797 DEBUG 1768 --- [http-nio-8081-exec-317] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.798 DEBUG 1768 --- [http-nio-8081-exec-297] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.798 DEBUG 1768 --- [http-nio-8081-exec-254] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.798 DEBUG 1768 --- [http-nio-8081-exec-236] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.798 DEBUG 1768 --- [http-nio-8081-exec-297] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.798 DEBUG 1768 --- [http-nio-8081-exec-236] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.800 DEBUG 1768 --- [http-nio-8081-exec-254] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.800 DEBUG 1768 --- [http-nio-8081-exec-236] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.800 DEBUG 1768 --- [http-nio-8081-exec-297] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.801 DEBUG 1768 --- [http-nio-8081-exec-321] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.801 DEBUG 1768 --- [http-nio-8081-exec-210] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.801 DEBUG 1768 --- [http-nio-8081-exec-243] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.801 DEBUG 1768 --- [http-nio-8081-exec-321] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.801 DEBUG 1768 --- [http-nio-8081-exec-210] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.801 DEBUG 1768 --- [http-nio-8081-exec-243] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.803 DEBUG 1768 --- [http-nio-8081-exec-321] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.803 DEBUG 1768 --- [http-nio-8081-exec-210] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.803 DEBUG 1768 --- [http-nio-8081-exec-243] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.803 DEBUG 1768 --- [http-nio-8081-exec-265] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.804 DEBUG 1768 --- [http-nio-8081-exec-292] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.804 DEBUG 1768 --- [http-nio-8081-exec-265] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.804 DEBUG 1768 --- [http-nio-8081-exec-205] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.804 DEBUG 1768 --- [http-nio-8081-exec-205] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.805 DEBUG 1768 --- [http-nio-8081-exec-292] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.807 DEBUG 1768 --- [http-nio-8081-exec-265] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.807 DEBUG 1768 --- [http-nio-8081-exec-205] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.808 DEBUG 1768 --- [http-nio-8081-exec-339] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.808 DEBUG 1768 --- [http-nio-8081-exec-292] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.809 DEBUG 1768 --- [http-nio-8081-exec-15] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.809 DEBUG 1768 --- [http-nio-8081-exec-339] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.810 DEBUG 1768 --- [http-nio-8081-exec-307] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.811 DEBUG 1768 --- [http-nio-8081-exec-15] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.811 DEBUG 1768 --- [http-nio-8081-exec-307] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.813 DEBUG 1768 --- [http-nio-8081-exec-339] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.813 DEBUG 1768 --- [http-nio-8081-exec-307] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.814 DEBUG 1768 --- [http-nio-8081-exec-370] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.815 DEBUG 1768 --- [http-nio-8081-exec-330] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.815 DEBUG 1768 --- [http-nio-8081-exec-15] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.815 DEBUG 1768 --- [http-nio-8081-exec-330] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.815 DEBUG 1768 --- [http-nio-8081-exec-370] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.816 DEBUG 1768 --- [http-nio-8081-exec-355] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.817 DEBUG 1768 --- [http-nio-8081-exec-355] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.818 DEBUG 1768 --- [http-nio-8081-exec-330] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.818 DEBUG 1768 --- [http-nio-8081-exec-370] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.818 DEBUG 1768 --- [http-nio-8081-exec-262] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.818 DEBUG 1768 --- [http-nio-8081-exec-279] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.819 DEBUG 1768 --- [http-nio-8081-exec-262] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.819 DEBUG 1768 --- [http-nio-8081-exec-279] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.820 DEBUG 1768 --- [http-nio-8081-exec-355] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.821 DEBUG 1768 --- [http-nio-8081-exec-284] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.822 DEBUG 1768 --- [http-nio-8081-exec-284] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.822 DEBUG 1768 --- [http-nio-8081-exec-262] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.822 DEBUG 1768 --- [http-nio-8081-exec-279] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.823 DEBUG 1768 --- [http-nio-8081-exec-325] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.823 DEBUG 1768 --- [http-nio-8081-exec-367] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.823 DEBUG 1768 --- [http-nio-8081-exec-325] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.823 DEBUG 1768 --- [http-nio-8081-exec-367] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.825 DEBUG 1768 --- [http-nio-8081-exec-284] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.826 DEBUG 1768 --- [http-nio-8081-exec-325] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.826 DEBUG 1768 --- [http-nio-8081-exec-353] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.826 DEBUG 1768 --- [http-nio-8081-exec-202] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.826 DEBUG 1768 --- [http-nio-8081-exec-353] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.826 DEBUG 1768 --- [http-nio-8081-exec-202] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.827 DEBUG 1768 --- [http-nio-8081-exec-367] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.828 DEBUG 1768 --- [http-nio-8081-exec-385] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.829 DEBUG 1768 --- [http-nio-8081-exec-385] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.829 DEBUG 1768 --- [http-nio-8081-exec-353] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.830 DEBUG 1768 --- [http-nio-8081-exec-202] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.831 DEBUG 1768 --- [http-nio-8081-exec-255] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.832 DEBUG 1768 --- [http-nio-8081-exec-385] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.833 DEBUG 1768 --- [http-nio-8081-exec-255] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.831 DEBUG 1768 --- [http-nio-8081-exec-359] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.836 DEBUG 1768 --- [http-nio-8081-exec-359] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.836 DEBUG 1768 --- [http-nio-8081-exec-255] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.831 DEBUG 1768 --- [http-nio-8081-exec-372] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.833 DEBUG 1768 --- [http-nio-8081-exec-381] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.837 DEBUG 1768 --- [http-nio-8081-exec-372] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.838 DEBUG 1768 --- [http-nio-8081-exec-381] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 12:58:43.839 DEBUG 1768 --- [http-nio-8081-exec-359] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.840 DEBUG 1768 --- [http-nio-8081-exec-299] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 12:58:43.841 DEBUG 1768 --- [http-nio-8081-exec-372] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 12:58:43.842 DEBUG 1768 --- [http-nio-8081-exec-238] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
