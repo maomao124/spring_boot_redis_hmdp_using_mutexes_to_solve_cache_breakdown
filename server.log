@@ -1,2 +1,65 @@
-2022-05-14 13:04:46.562  INFO 1768 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
-2022-05-14 13:04:46.566  INFO 1768 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-05-14 14:01:21.762  INFO 18044 --- [http-nio-8081-exec-99] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-14 14:01:21.764  INFO 18044 --- [http-nio-8081-exec-99] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-14 14:01:21.765  INFO 18044 --- [http-nio-8081-exec-99] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-14 14:01:22.578 DEBUG 18044 --- [http-nio-8081-exec-109] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 14:01:22.597 DEBUG 18044 --- [http-nio-8081-exec-109] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 14:01:22.615 DEBUG 18044 --- [http-nio-8081-exec-109] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 14:01:32.410 DEBUG 18044 --- [http-nio-8081-exec-11] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 14:01:32.411 DEBUG 18044 --- [http-nio-8081-exec-11] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 14:01:32.414 DEBUG 18044 --- [http-nio-8081-exec-11] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 14:02:55.836  INFO 18792 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : Starting SpringBootRedisHmdpUsingMutexesToSolveCacheBreakdownApplication using Java 16.0.2 on mao with PID 18792 (H:\程序\大三下期\spring_boot_redis_hmdp使用互斥锁解决缓存击穿问题\target\classes started by mao in H:\程序\大三下期\spring_boot_redis_hmdp使用互斥锁解决缓存击穿问题)
+2022-05-14 14:02:55.837 DEBUG 18792 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-14 14:02:55.837  INFO 18792 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : The following 1 profile is active: "dev"
+2022-05-14 14:02:55.870  INFO 18792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-14 14:02:55.870  INFO 18792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-14 14:02:56.351  INFO 18792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-14 14:02:56.352  INFO 18792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-14 14:02:56.372  INFO 18792 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2022-05-14 14:02:56.791  INFO 18792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-14 14:02:56.797  INFO 18792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-14 14:02:56.798  INFO 18792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-14 14:02:56.854  INFO 18792 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-14 14:02:56.855  INFO 18792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 984 ms
+2022-05-14 14:02:57.074  INFO 18792 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-05-14 14:02:57.169  INFO 18792 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-05-14 14:02:58.027  INFO 18792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-14 14:02:58.074  INFO 18792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-14 14:02:58.085  INFO 18792 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : Started SpringBootRedisHmdpUsingMutexesToSolveCacheBreakdownApplication in 2.575 seconds (JVM running for 3.099)
+2022-05-14 14:03:16.673  INFO 18792 --- [http-nio-8081-exec-51] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-14 14:03:16.673  INFO 18792 --- [http-nio-8081-exec-51] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-14 14:03:16.674  INFO 18792 --- [http-nio-8081-exec-51] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-14 14:03:17.457 DEBUG 18792 --- [http-nio-8081-exec-194] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 14:03:17.476 DEBUG 18792 --- [http-nio-8081-exec-194] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 14:03:17.498 DEBUG 18792 --- [http-nio-8081-exec-194] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 14:04:51.546  INFO 18792 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-05-14 14:04:51.549  INFO 18792 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-05-14 14:04:57.763  INFO 13228 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : Starting SpringBootRedisHmdpUsingMutexesToSolveCacheBreakdownApplication using Java 16.0.2 on mao with PID 13228 (H:\程序\大三下期\spring_boot_redis_hmdp使用互斥锁解决缓存击穿问题\target\classes started by mao in H:\程序\大三下期\spring_boot_redis_hmdp使用互斥锁解决缓存击穿问题)
+2022-05-14 14:04:57.764 DEBUG 13228 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-14 14:04:57.764  INFO 13228 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : The following 1 profile is active: "dev"
+2022-05-14 14:04:57.799  INFO 13228 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-14 14:04:57.799  INFO 13228 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-14 14:04:58.292  INFO 13228 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-14 14:04:58.293  INFO 13228 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-14 14:04:58.315  INFO 13228 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2022-05-14 14:04:58.744  INFO 13228 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-14 14:04:58.750  INFO 13228 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-14 14:04:58.751  INFO 13228 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-14 14:04:58.809  INFO 13228 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-14 14:04:58.810  INFO 13228 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1010 ms
+2022-05-14 14:04:59.031  INFO 13228 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-05-14 14:04:59.130  INFO 13228 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-05-14 14:04:59.972  INFO 13228 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-14 14:05:00.017  INFO 13228 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-14 14:05:00.028  INFO 13228 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : Started SpringBootRedisHmdpUsingMutexesToSolveCacheBreakdownApplication in 2.597 seconds (JVM running for 3.147)
+2022-05-14 14:05:12.629  INFO 13228 --- [http-nio-8081-exec-111] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-14 14:05:12.630  INFO 13228 --- [http-nio-8081-exec-111] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-14 14:05:12.631  INFO 13228 --- [http-nio-8081-exec-111] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-14 14:05:13.432 DEBUG 13228 --- [http-nio-8081-exec-32] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 14:05:13.450 DEBUG 13228 --- [http-nio-8081-exec-32] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 14:05:13.468 DEBUG 13228 --- [http-nio-8081-exec-32] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 14:09:03.151  WARN 13228 --- [http-nio-8081-exec-149] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/test, version : 1.2.8, lastPacketReceivedIdleMillis : 229682
+2022-05-14 14:09:03.186 DEBUG 13228 --- [http-nio-8081-exec-149] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 14:09:03.186 DEBUG 13228 --- [http-nio-8081-exec-149] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 14:09:03.188 DEBUG 13228 --- [http-nio-8081-exec-149] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 14:09:47.383  INFO 13228 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-05-14 14:09:47.385  INFO 13228 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

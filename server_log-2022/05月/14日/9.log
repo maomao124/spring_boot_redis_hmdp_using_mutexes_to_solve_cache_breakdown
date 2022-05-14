@@ -1,0 +1,97 @@
+2022-05-14 13:42:13.176 DEBUG 14308 --- [http-nio-8081-exec-44] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 13:42:23.209 DEBUG 14308 --- [http-nio-8081-exec-92] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 13:42:23.209 DEBUG 14308 --- [http-nio-8081-exec-92] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 13:42:23.211 DEBUG 14308 --- [http-nio-8081-exec-92] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 13:42:33.219 DEBUG 14308 --- [http-nio-8081-exec-139] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 13:42:33.220 DEBUG 14308 --- [http-nio-8081-exec-139] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 13:42:33.223 DEBUG 14308 --- [http-nio-8081-exec-139] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 13:42:43.276 DEBUG 14308 --- [http-nio-8081-exec-141] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 13:42:43.277 DEBUG 14308 --- [http-nio-8081-exec-141] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 13:42:43.280 DEBUG 14308 --- [http-nio-8081-exec-141] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 13:45:56.481  INFO 13824 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : Starting SpringBootRedisHmdpUsingMutexesToSolveCacheBreakdownApplication using Java 16.0.2 on mao with PID 13824 (H:\程序\大三下期\spring_boot_redis_hmdp使用互斥锁解决缓存击穿问题\target\classes started by mao in H:\程序\大三下期\spring_boot_redis_hmdp使用互斥锁解决缓存击穿问题)
+2022-05-14 13:45:56.482 DEBUG 13824 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-14 13:45:56.482  INFO 13824 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : The following 1 profile is active: "dev"
+2022-05-14 13:45:56.517  INFO 13824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-14 13:45:56.518  INFO 13824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-14 13:45:57.052  INFO 13824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-14 13:45:57.054  INFO 13824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-14 13:45:57.075  INFO 13824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2022-05-14 13:45:57.510  INFO 13824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-14 13:45:57.516  INFO 13824 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-14 13:45:57.517  INFO 13824 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-14 13:45:57.579  INFO 13824 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-14 13:45:57.579  INFO 13824 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1061 ms
+2022-05-14 13:45:57.804  INFO 13824 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-05-14 13:45:57.903  INFO 13824 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-05-14 13:45:58.740  INFO 13824 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-14 13:45:58.782  INFO 13824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-14 13:45:58.792  INFO 13824 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : Started SpringBootRedisHmdpUsingMutexesToSolveCacheBreakdownApplication in 2.68 seconds (JVM running for 3.307)
+2022-05-14 13:46:14.641  INFO 13824 --- [http-nio-8081-exec-159] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-14 13:46:14.641  INFO 13824 --- [http-nio-8081-exec-159] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-14 13:46:14.642  INFO 13824 --- [http-nio-8081-exec-159] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-14 13:46:15.442 DEBUG 13824 --- [http-nio-8081-exec-120] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 13:46:15.461 DEBUG 13824 --- [http-nio-8081-exec-120] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 13:46:15.480 DEBUG 13824 --- [http-nio-8081-exec-120] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 13:46:25.235 DEBUG 13824 --- [http-nio-8081-exec-170] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 13:46:25.235 DEBUG 13824 --- [http-nio-8081-exec-170] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 13:46:25.237 DEBUG 13824 --- [http-nio-8081-exec-170] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 13:46:35.238 DEBUG 13824 --- [http-nio-8081-exec-55] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 13:46:35.239 DEBUG 13824 --- [http-nio-8081-exec-55] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 13:46:35.242 DEBUG 13824 --- [http-nio-8081-exec-55] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 13:46:45.280 DEBUG 13824 --- [http-nio-8081-exec-172] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 13:46:45.281 DEBUG 13824 --- [http-nio-8081-exec-172] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 13:46:45.285 DEBUG 13824 --- [http-nio-8081-exec-172] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 13:46:55.295 DEBUG 13824 --- [http-nio-8081-exec-179] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 13:46:55.296 DEBUG 13824 --- [http-nio-8081-exec-179] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 13:46:55.297 DEBUG 13824 --- [http-nio-8081-exec-179] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 13:49:15.098  INFO 13540 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : Starting SpringBootRedisHmdpUsingMutexesToSolveCacheBreakdownApplication using Java 16.0.2 on mao with PID 13540 (H:\程序\大三下期\spring_boot_redis_hmdp使用互斥锁解决缓存击穿问题\target\classes started by mao in H:\程序\大三下期\spring_boot_redis_hmdp使用互斥锁解决缓存击穿问题)
+2022-05-14 13:49:15.099 DEBUG 13540 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-14 13:49:15.100  INFO 13540 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : The following 1 profile is active: "dev"
+2022-05-14 13:49:15.135  INFO 13540 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-14 13:49:15.135  INFO 13540 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-14 13:49:15.642  INFO 13540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-14 13:49:15.643  INFO 13540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-14 13:49:15.664  INFO 13540 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2022-05-14 13:49:16.106  INFO 13540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-14 13:49:16.113  INFO 13540 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-14 13:49:16.113  INFO 13540 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-14 13:49:16.175  INFO 13540 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-14 13:49:16.176  INFO 13540 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1040 ms
+2022-05-14 13:49:16.391  INFO 13540 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-05-14 13:49:16.485  INFO 13540 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-05-14 13:49:17.327  INFO 13540 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-14 13:49:17.371  INFO 13540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-14 13:49:17.381  INFO 13540 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : Started SpringBootRedisHmdpUsingMutexesToSolveCacheBreakdownApplication in 2.637 seconds (JVM running for 3.203)
+2022-05-14 13:49:48.262  INFO 13540 --- [http-nio-8081-exec-98] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-14 13:49:48.263  INFO 13540 --- [http-nio-8081-exec-98] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-14 13:49:48.264  INFO 13540 --- [http-nio-8081-exec-98] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-14 13:49:49.107 DEBUG 13540 --- [http-nio-8081-exec-114] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 13:49:49.125 DEBUG 13540 --- [http-nio-8081-exec-114] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 13:49:49.143 DEBUG 13540 --- [http-nio-8081-exec-114] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 13:49:58.868 DEBUG 13540 --- [http-nio-8081-exec-63] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 13:49:58.868 DEBUG 13540 --- [http-nio-8081-exec-63] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 13:49:58.870 DEBUG 13540 --- [http-nio-8081-exec-63] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 13:50:08.924 DEBUG 13540 --- [http-nio-8081-exec-9] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 13:50:08.925 DEBUG 13540 --- [http-nio-8081-exec-9] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 13:50:08.927 DEBUG 13540 --- [http-nio-8081-exec-9] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 13:50:18.942 DEBUG 13540 --- [http-nio-8081-exec-28] m.s.mapper.ShopMapper.selectById         : ==>  Preparing: SELECT id,name,type_id,images,area,address,x,y,avg_price,sold,comments,score,open_hours,create_time,update_time FROM tb_shop WHERE id=?
+2022-05-14 13:50:18.943 DEBUG 13540 --- [http-nio-8081-exec-28] m.s.mapper.ShopMapper.selectById         : ==> Parameters: 1(Long)
+2022-05-14 13:50:18.945 DEBUG 13540 --- [http-nio-8081-exec-28] m.s.mapper.ShopMapper.selectById         : <==      Total: 1
+2022-05-14 14:01:07.845  INFO 18044 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : Starting SpringBootRedisHmdpUsingMutexesToSolveCacheBreakdownApplication using Java 16.0.2 on mao with PID 18044 (H:\程序\大三下期\spring_boot_redis_hmdp使用互斥锁解决缓存击穿问题\target\classes started by mao in H:\程序\大三下期\spring_boot_redis_hmdp使用互斥锁解决缓存击穿问题)
+2022-05-14 14:01:07.845 DEBUG 18044 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-14 14:01:07.846  INFO 18044 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : The following 1 profile is active: "dev"
+2022-05-14 14:01:07.880  INFO 18044 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-14 14:01:07.880  INFO 18044 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-14 14:01:08.385  INFO 18044 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-14 14:01:08.386  INFO 18044 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-14 14:01:08.408  INFO 18044 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2022-05-14 14:01:08.846  INFO 18044 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-14 14:01:08.856  INFO 18044 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-14 14:01:08.856  INFO 18044 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-14 14:01:08.928  INFO 18044 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-14 14:01:08.929  INFO 18044 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1047 ms
+2022-05-14 14:01:09.151  INFO 18044 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-05-14 14:01:09.245  INFO 18044 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-05-14 14:01:10.096  INFO 18044 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-14 14:01:10.139  INFO 18044 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-14 14:01:10.149  INFO 18044 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : Started SpringBootRedisHmdpUsingMutexesToSolveCacheBreakdownApplication in 2.639 seconds (JVM running for 3.186)

@@ -27,6 +27,26 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
     @Override
     public Result queryShopById(Long id)
     {
+        //查询
+        Shop shop = this.queryWithMutex(id);
+        //判断
+        if (shop == null)
+        {
+            //不存在
+            return Result.fail("店铺信息不存在");
+        }
+        //返回
+        return Result.ok(shop);
+    }
+
+    /**
+     * 互斥锁解决缓存击穿问题
+     *
+     * @param id 商铺id
+     * @return Shop
+     */
+    private Shop queryWithMutex(Long id)
+    {
         //获取redisKey
         String redisKey = RedisConstants.CACHE_SHOP_KEY + id;
         //从redis中查询商户信息，根据id
@@ -35,16 +55,17 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
         if (StrUtil.isNotBlank(shopJson))
         {
             //不是空，redis里有，返回
-            return Result.ok(JSONUtil.toBean(shopJson, Shop.class));
+            return JSONUtil.toBean(shopJson, Shop.class);
         }
         //是空串，不是null，返回
         if (shopJson != null)
         {
-            return Result.fail("店铺信息不存在");
+            return null;
         }
         //锁的key
         String lockKey = RedisConstants.LOCK_SHOP_KEY + id;
 
+        Shop shop = null;
         try
         {
             //获取互斥锁
@@ -54,38 +75,36 @@ public class ShopServiceImpl extends ServiceImpl<ShopMapper, Shop> implements IS
             {
                 //没有获取到锁
                 //200毫秒后再次获取
-                try
-                {
-                    Thread.sleep(200);
-                }
-                catch (InterruptedException e)
-                {
-                    e.printStackTrace();
-                }
+                Thread.sleep(200);
                 //递归调用
-                return queryShopById(id);
+                return queryWithMutex(id);
             }
             //得到了锁
             //null，查数据库
-            Shop shop = this.getById(id);
+            shop = this.getById(id);
             //判断数据库里的信息是否为空
             if (shop == null)
             {
                 //空，将空值写入redis，返回错误
                 stringRedisTemplate.opsForValue().set(redisKey, "", RedisConstants.CACHE_NULL_TTL, TimeUnit.MINUTES);
-                return Result.fail("店铺信息不存在");
+                return null;
             }
             //存在，回写到redis里，设置随机的过期时间
             stringRedisTemplate.opsForValue().set(redisKey, JSONUtil.toJsonStr(shop),
                     RedisConstants.CACHE_SHOP_TTL * 60 + getIntRandom(0, 300), TimeUnit.SECONDS);
-            //返回数据
-            return Result.ok(shop);
+        }
+        catch (InterruptedException e)
+        {
+            throw new RuntimeException(e);
         }
         finally
         {
             //释放锁
-            this.unlock(redisKey);
+            //System.out.println("释放锁");
+            this.unlock(lockKey);
         }
+        //返回数据
+        return shop;
     }
 
     @Override
