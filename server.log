@@ -83,3 +83,14 @@
 2022-05-14 14:10:22.060  INFO 14820 --- [restartedMain] gMutexesToSolveCacheBreakdownApplication : Started SpringBootRedisHmdpUsingMutexesToSolveCacheBreakdownApplication in 2.825 seconds (JVM running for 3.643)
 2022-05-14 14:10:24.151  INFO 14820 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
 2022-05-14 14:10:24.152  INFO 14820 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-05-14 14:11:27.657  INFO 8984 --- [main] xesToSolveCacheBreakdownApplicationTests : Starting SpringBootRedisHmdpUsingMutexesToSolveCacheBreakdownApplicationTests using Java 16.0.2 on mao with PID 8984 (started by mao in H:\程序\大三下期\spring_boot_redis_hmdp使用互斥锁解决缓存击穿问题)
+2022-05-14 14:11:27.659 DEBUG 8984 --- [main] xesToSolveCacheBreakdownApplicationTests : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-14 14:11:27.660  INFO 8984 --- [main] xesToSolveCacheBreakdownApplicationTests : The following 1 profile is active: "dev"
+2022-05-14 14:11:28.557  INFO 8984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-14 14:11:28.562  INFO 8984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-14 14:11:28.602  INFO 8984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2022-05-14 14:11:29.521  INFO 8984 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-05-14 14:11:29.801  INFO 8984 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-05-14 14:11:33.202  INFO 8984 --- [main] xesToSolveCacheBreakdownApplicationTests : Started SpringBootRedisHmdpUsingMutexesToSolveCacheBreakdownApplicationTests in 6.036 seconds (JVM running for 6.971)
+2022-05-14 14:11:33.838  INFO 8984 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-05-14 14:11:33.840  INFO 8984 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

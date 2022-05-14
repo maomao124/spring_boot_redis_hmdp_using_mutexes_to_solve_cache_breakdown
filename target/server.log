@@ -1,0 +1,15 @@
+2022-05-14 14:11:46.155  INFO 13924 --- [main] gMutexesToSolveCacheBreakdownApplication : Starting SpringBootRedisHmdpUsingMutexesToSolveCacheBreakdownApplication v0.0.1-SNAPSHOT using Java 16.0.2 on mao with PID 13924 (H:\程序\大三下期\spring_boot_redis_hmdp使用互斥锁解决缓存击穿问题\target\spring_boot_redis_hmdp-0.0.1-SNAPSHOT.jar started by mao in H:\程序\大三下期\spring_boot_redis_hmdp使用互斥锁解决缓存击穿问题\target)
+2022-05-14 14:11:46.158 DEBUG 13924 --- [main] gMutexesToSolveCacheBreakdownApplication : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-14 14:11:46.159  INFO 13924 --- [main] gMutexesToSolveCacheBreakdownApplication : The following 1 profile is active: "dev"
+2022-05-14 14:11:47.002  INFO 13924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-14 14:11:47.006  INFO 13924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-14 14:11:47.054  INFO 13924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2022-05-14 14:11:47.840  INFO 13924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-14 14:11:47.853  INFO 13924 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-14 14:11:47.853  INFO 13924 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-14 14:11:47.929  INFO 13924 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-14 14:11:47.930  INFO 13924 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1704 ms
+2022-05-14 14:11:48.326  INFO 13924 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-05-14 14:11:48.578  INFO 13924 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-05-14 14:11:50.227  INFO 13924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-14 14:11:50.243  INFO 13924 --- [main] gMutexesToSolveCacheBreakdownApplication : Started SpringBootRedisHmdpUsingMutexesToSolveCacheBreakdownApplication in 4.733 seconds (JVM running for 5.227)
